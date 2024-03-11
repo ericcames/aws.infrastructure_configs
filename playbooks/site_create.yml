@@ -4,4 +4,4 @@
   connection: local
 
   roles:
-    - role: create_vpc
+    - role: create_kmskey

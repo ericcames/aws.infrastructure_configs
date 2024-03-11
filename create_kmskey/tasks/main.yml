@@ -1,0 +1,8 @@
+---
+- name: Create a new KMS key
+  amazon.aws.kms_key:
+    region: "{{ region }}"
+    alias: mykey
+    tags:
+      Name: myKey
+      Purpose: protect_stuff

@@ -4,4 +4,4 @@
   connection: local
 
   roles:
-    - role: delete_vpc
+    - role: delete_kmskey
