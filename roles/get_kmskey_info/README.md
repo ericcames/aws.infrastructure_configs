@@ -1,7 +1,7 @@
-create_kmskey
+get_kmskey_info
 =========
 
-This role will create a Key Management Service (KMS) Key.
+This role will get all Key Management Service (KMS) Key info.
 
 Requirements
 ------------
@@ -13,6 +13,7 @@ Role Variables
 --------------
 
 region: us-west-1
+ansible_python_interpreter: /usr/bin/python3
 ansible_python_interpreter: /usr/bin/python3
 key_purpose: hello-world
 key_name: mickeys-key
@@ -26,13 +27,13 @@ Example Playbook
 ----------------
 
 ---
-- name: Create KMS Key
+- name: Get KMS Key info
   hosts: localhost
   connection: local
 
   roles:
 
-    - name: create_kmskey
+    - name: get_kmskey_info
 
 License
 -------

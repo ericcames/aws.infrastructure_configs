@@ -1,0 +1,4 @@
+---
+- name: Get KMS key info
+  amazon.aws.kms_key_info:
+    region: "{{ region }}"
