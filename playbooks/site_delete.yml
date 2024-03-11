@@ -1,0 +1,7 @@
+---
+- name: Delete stuff
+  hosts: localhost
+  connection: local
+
+  roles:
+    - role: delete_vpc

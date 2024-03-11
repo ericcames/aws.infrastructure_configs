@@ -1,0 +1,7 @@
+---
+- name: Create stuff
+  hosts: localhost
+  connection: local
+
+  roles:
+    - role: create_vpc
