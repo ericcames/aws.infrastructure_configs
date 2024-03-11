@@ -6,16 +6,16 @@ This role will create a Key Management Service (KMS) Key.
 Requirements
 ------------
 
-<br>Amazon Web Console Account<br/>
-<br>Amazon Web Services Credential in Ansible Automation Platform<br/>
+Amazon Web Console Account
+Amazon Web Services Credential in Ansible Automation Platform
 
 Role Variables
 --------------
 
-<br>region: us-west-1<br/>
-<br>ansible_python_interpreter: /usr/bin/python3<br/>
-<br>key_purpose: hello-world<br/>
-<br>key_name: mickeys-key<br/>
+region: us-west-1
+ansible_python_interpreter: /usr/bin/python3
+key_purpose: hello-world
+key_name: mickeys-key
 
 Dependencies
 ------------
@@ -25,14 +25,14 @@ amazon.aws
 Example Playbook
 ----------------
 
-<br>---<br/>
-<br>- name: Create KMS Key<br/>
-  <br>hosts: localhost<br/>
-  <br>connection: local<br/>
+---
+- name: Create KMS Key
+  hosts: localhost
+  connection: local
 
-  <br>roles:<br/>
+  roles:
 
-    <br>- name: create_kmskey<br/>
+    - name: create_kmskey
 
 License
 -------
