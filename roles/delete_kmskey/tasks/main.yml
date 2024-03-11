@@ -3,7 +3,7 @@
   amazon.aws.kms_key:
     region: "{{ region }}"
     state: absent
-    alias: mykey
+    alias: "{{ key_name }}"
     tags:
-      Name: myKey
-      Purpose: protect_stuff
+      Name: "{{ key_name }}"
+      Purpose: "{{ key_purpose }}"

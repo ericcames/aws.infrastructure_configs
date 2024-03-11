@@ -2,7 +2,7 @@
 - name: Create a new KMS key
   amazon.aws.kms_key:
     region: "{{ region }}"
-    alias: mykey
+    alias: "{{ key_name }}"
     tags:
-      Name: myKey
-      Purpose: protect_stuff
+      Name: "{{ key_name }}"
+      Purpose: "{{ key_purpose }}"
