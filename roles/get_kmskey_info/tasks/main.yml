@@ -5,6 +5,5 @@
     region: "{{ region }}"
 
 - name: Print out KMS keys
-  loop: kms_keys
   ansible.builtin.debug:
-    msg: "{{ item }}"
+    var: kms_keys
