@@ -1,0 +1,4 @@
+ansible-builder create
+ansible-builder build -t ee-aws
+podman login https://quay.io
+podman push localhost/ee-aws quay.io/zigfreed/ee-aws
