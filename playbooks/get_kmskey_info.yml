@@ -1,0 +1,7 @@
+---
+- name: Get stuff
+  hosts: localhost
+  connection: local
+
+  roles:
+    - role: get_kmskey_info
