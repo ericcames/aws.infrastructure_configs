@@ -7,4 +7,4 @@
 - name: Print out KMS keys
   loop: kms_keys
   ansible.builtin.debug:
-    msg: "{{ kms_keys }}['kms_keys']"
+    msg: "{{ item['kms_keys'] }}"
