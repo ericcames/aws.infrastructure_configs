@@ -12,10 +12,10 @@ Amazon Web Services Credential in Ansible Automation Platform
 Role Variables
 --------------
 
-<br>region: us-west-1</br>
-ansible_python_interpreter: /usr/bin/python3<br>
-key_purpose: hello-world<br>
-key_name: mickeys-key<br>
+region: us-west-1  <br>
+ansible_python_interpreter: /usr/bin/python3  <br>
+key_purpose: hello-world  <br>
+key_name: mickeys-key  <br>
 
 Dependencies
 ------------
