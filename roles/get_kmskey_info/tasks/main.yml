@@ -1,4 +1,10 @@
 ---
 - name: Get KMS key info
+  register: kms_keys
   amazon.aws.kms_key_info:
     region: "{{ region }}"
+
+- name: Print out KMS keys
+  loop: kms_keys
+  ansible.builtin.debug:
+    msg: "{{ kms_keys }}['kms_keys']"
