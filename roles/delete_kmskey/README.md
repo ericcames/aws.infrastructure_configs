@@ -43,5 +43,5 @@ Author Information
 ------------------
 ```yaml
 Eric C Ames
-ericcames@msn.com
 ```
+ericcames@msn.com

@@ -43,6 +43,7 @@ https://spdx.org/licenses/GPL-3.0-only.html
 
 Author Information
 ------------------
-
+```yaml
 Eric C Ames
+```
 ericcames@msn.com
