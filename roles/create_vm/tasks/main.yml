@@ -37,7 +37,6 @@
   amazon.aws.ec2_vol:
     instance: "{{ item['instance_id'] }}"
     name: Linux Demo Server
-    device_name: /dev/sda
     region: "{{ region }}"
     delete_on_termination: true
     encrypted: true
