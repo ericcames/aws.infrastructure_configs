@@ -44,3 +44,4 @@
     volume_type: gp3
     iops: 3000
     kms_key_id: "{{ kms_key_id }}"
+    encrypted: true
