@@ -5,26 +5,26 @@ This role will delete a Key Management Service (KMS) Key.
 
 Requirements
 ------------
-
+```yaml
 Amazon Web Console Account
 Amazon Web Services Credential in Ansible Automation Platform
-
+```
 Role Variables
 --------------
-
+```yaml
 region: us-west-1
 ansible_python_interpreter: /usr/bin/python3
 key_purpose: hello-world
 key_name: mickeys-key
-
+```
 Dependencies
 ------------
-
+```yaml
 amazon.aws
-
+```
 Example Playbook
 ----------------
-
+```yaml
 ---
 - name: Delete KMS Key
   hosts: localhost
@@ -33,7 +33,7 @@ Example Playbook
   roles:
 
     - name: delete_kmskey
-
+```
 License
 -------
 
@@ -41,6 +41,7 @@ https://spdx.org/licenses/GPL-3.0-only.html
 
 Author Information
 ------------------
-
+```yaml
 Eric C Ames
 ericcames@msn.com
+```
