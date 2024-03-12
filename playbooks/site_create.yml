@@ -5,3 +5,5 @@
 
   roles:
     - role: create_kmskey
+    - role: create_vpc
+    - role: create_vm
