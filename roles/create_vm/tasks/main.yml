@@ -31,17 +31,5 @@
       DeletebBy: "{{ ec2_ansible_group }}"
     wait: true
     wait_timeout: 600
-
-- name: Create the storage volume we need
-  loop: "{{ ec2_vms['instances'] }}"
-  amazon.aws.ec2_vol:
-    instance: "{{ item['instance_id'] }}"
-    volume_size: 100
-    name: My Linux Demo Volume
-    device_name: /dev/sdf
-    region: "{{ region }}"
-    delete_on_termination: true
-    volume_type: gp3
-    iops: 3000
     kms_key_id: "{{ kms_key_id }}"
     encrypted: true
