@@ -23,6 +23,9 @@
     network:
       assign_public_ip: "{{ assign_public_ip }}"
     image_id: "{{ image }}"
+    volumes:
+      encrypted: true
+      kms_key_id: "{{ kms_key_id }}"
     tags:
       Environment: Linux_deployment
       AlwaysUp: "{{ alwaysup }}"
