@@ -2,7 +2,7 @@
 vpc_name: demo_vpc
 user_name: mickey.mouse
 subnet_name: "{{ vpc_name }}_Subnet"
-image: ami-06127bea7af8a9ad8
+image: ami-0186e3fec9b0283ee
 count: 1
 region: us-west-1
 assign_public_ip: true
