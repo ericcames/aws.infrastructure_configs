@@ -1,6 +1,7 @@
 Container Creation Steps
 =========
 ```yaml
+create your execution-environment.yml file
 ansible-builder create
 ansible-builder build -t ee-aws
 podman login https://quay.io
