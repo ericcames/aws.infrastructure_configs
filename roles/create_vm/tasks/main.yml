@@ -31,3 +31,14 @@
       DeletebBy: "{{ ec2_ansible_group }}"
     wait: true
     wait_timeout: 600
+
+- name: Update the volume
+  loop: "{{ ec2_vms['instances'] }}"
+  amazon.aws.ec2_vol:
+    instance: "{{ item['instance_id'] }}"
+    name: Linux Demo Server
+    device_name: /dev/sda
+    region: "{{ region }}"
+    delete_on_termination: true
+    encrypted: true
+    kms_key_id: "{{ kms_key_id }}"
