@@ -7,3 +7,12 @@
     - role: create_kmskey
     - role: create_vpc
     - role: create_vm
+    - role: inventory_add_servers
+
+- name: Build out the newly provisioned server
+  hosts: rhel
+  become: true
+
+  roles:
+    - role: linux_post_install
+    - role: linux_account_create
