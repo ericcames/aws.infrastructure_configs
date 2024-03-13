@@ -11,8 +11,8 @@ Root access on the machines in the inventory
 Role Variables
 --------------
 ```yaml
-username: "{{ customer_portal_username }}"
-password: "{{ customer_portal_password }}"
+username: customer_portal_username
+password: customer_portal_password
 controller_url: aap.example.com
 ```
 Dependencies
