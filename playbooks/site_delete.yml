@@ -1,5 +1,4 @@
 ---
----
 - name: Unregister the systems
   hosts: rhel
   become: true
