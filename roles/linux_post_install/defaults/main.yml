@@ -1,4 +1,4 @@
 ---
-username: "{{ customer_portal_username }}"
-password: "{{ customer_portal_password }}"
+username: customer_portal_username
+password: customer_portal_password
 controller_url: aap.example.com
