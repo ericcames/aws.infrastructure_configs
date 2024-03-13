@@ -44,13 +44,3 @@
     host: "{{ item['public_ip_address'] }}"
     search_regex: OpenSSH
     delay: 10
-
-# - name: Update the volume
-#   loop: "{{ ec2_vms['instances'] }}"
-#   amazon.aws.ec2_vol:
-#     instance: "{{ item['instance_id'] }}"
-#     name: Linux Demo Server
-#     region: "{{ region }}"
-#     delete_on_termination: true
-#     encrypted: true
-#     kms_key_id: "{{ kms_key_id }}"
