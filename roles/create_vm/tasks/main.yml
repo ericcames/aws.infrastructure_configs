@@ -22,6 +22,10 @@
     security_group: "{{ ec2_security_group_name }}"
     network:
       assign_public_ip: "{{ assign_public_ip }}"
+    volume:
+      ebs:
+        kms_key_id: "{{ kms_key_id }}"
+        encrypted: true
     image_id: "{{ image }}"
     tags:
       Environment: Linux_deployment
@@ -40,12 +44,12 @@
     search_regex: OpenSSH
     delay: 10
 
-- name: Update the volume
-  loop: "{{ ec2_vms['instances'] }}"
-  amazon.aws.ec2_vol:
-    instance: "{{ item['instance_id'] }}"
-    name: Linux Demo Server
-    region: "{{ region }}"
-    delete_on_termination: true
-    encrypted: true
-    kms_key_id: "{{ kms_key_id }}"
+# - name: Update the volume
+#   loop: "{{ ec2_vms['instances'] }}"
+#   amazon.aws.ec2_vol:
+#     instance: "{{ item['instance_id'] }}"
+#     name: Linux Demo Server
+#     region: "{{ region }}"
+#     delete_on_termination: true
+#     encrypted: true
+#     kms_key_id: "{{ kms_key_id }}"
