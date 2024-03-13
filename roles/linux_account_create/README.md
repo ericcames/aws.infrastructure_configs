@@ -12,8 +12,7 @@ Vaulted file in the format of files/user_list_example.yml
 ```
 Role Variables
 --------------
-```yaml
-```
+
 Dependencies
 ------------
 
