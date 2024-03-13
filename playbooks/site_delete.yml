@@ -1,4 +1,12 @@
 ---
+---
+- name: Unregister the systems
+  hosts: rhel
+  become: true
+
+  roles:
+    - role: linux_unregister_servers
+
 - name: Delete stuff
   hosts: localhost
   connection: local
@@ -7,3 +15,4 @@
     - role: delete_vm
     - role: delete_kmskey
     - role: delete_vpc
+    - role: inventory_remove_servers
