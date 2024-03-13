@@ -23,9 +23,10 @@
     network:
       assign_public_ip: "{{ assign_public_ip }}"
     volumes:
-      ebs:
-        kms_key_id: "{{ kms_key_id }}"
-        encrypted: true
+      - device_name: /dev/sda1
+        ebs:
+          kms_key_id: "{{ kms_key_id }}"
+          encrypted: true
     image_id: "{{ image }}"
     tags:
       Environment: Linux_deployment
