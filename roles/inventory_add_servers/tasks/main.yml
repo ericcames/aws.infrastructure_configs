@@ -1,0 +1,50 @@
+---
+- name: Get servers we care about
+  register: instance_info
+  amazon.aws.ec2_instance_info:
+    region: "{{ region }}"
+    filters:
+      tag:Name: "{{ server_name }}"
+      instance-state-name: [running]
+
+- name: Get an AAP API Token and store it as new_token
+  register: new_token
+  ansible.builtin.uri:
+    url: https://{{ controller_url }}/api/v2/tokens/
+    method: POST
+    user: "{{ controller_user }}"
+    password: "{{ controller_passwd }}"
+    validate_certs: false
+    force_basic_auth: true
+    status_code: 201
+    return_content: true
+
+- name: Update the managed inventory
+  loop: "{{ instance_info['instances'] }}"
+  ansible.controller.host:
+    controller_host: https://{{ controller_url }}
+    controller_username: "{{ controller_user }}"
+    controller_oauthtoken: "{{ new_token.json.token }}"
+    name: "{{ item['public_dns_name'] }}"
+    inventory: "{{ inventory_name }}"
+    state: present
+    enabled: true
+
+- name: Create a group for our server
+  loop: "{{ instance_info['instances'] }}"
+  ansible.controller.group:
+    controller_host: https://{{ controller_url }}
+    controller_username: "{{ controller_user }}"
+    controller_oauthtoken: "{{ new_token.json.token }}"
+    name: rhel
+    description: Red Hat Linux Servers
+    inventory: "{{ inventory_name }}"
+    hosts: "{{ item['public_dns_name'] }}"
+    preserve_existing_hosts: true
+
+- name: Update runtime inventory
+  loop: "{{ instance_info['instances'] }}"
+  ansible.builtin.add_host:
+    name: "{{ item['public_dns_name'] }}"
+    groups:
+      - rhel
