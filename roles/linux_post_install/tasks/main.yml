@@ -9,7 +9,7 @@
 - name: Making sure the epel repo is made available
   ansible.builtin.dnf:
     name:
-      - https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+      - https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
     state: present
     disable_gpg_check: true
 
