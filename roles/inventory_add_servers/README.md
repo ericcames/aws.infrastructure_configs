@@ -5,9 +5,10 @@ This role will add servers to an inventory on your ansible controller
 
 Requirements
 ------------
-
+```yaml
 Admin Account on your Ansible Controller
-
+An inventory on your controller that matches the one set in your inventory_name variable
+```
 Role Variables
 --------------
 ```yaml
