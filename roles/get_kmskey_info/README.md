@@ -14,7 +14,6 @@ Role Variables
 ```yaml
 region: us-west-1
 ansible_python_interpreter: /usr/bin/python3
-ansible_python_interpreter: /usr/bin/python3
 key_purpose: hello-world
 key_name: mickeys-key
 ```
