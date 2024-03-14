@@ -2,7 +2,7 @@
 collections:
   - name: amazon.aws
   - name: ansible.posix
-  - name: awx.awx
+  - name: ansible.controller
   - name: redhat.rhel_system_roles
   - name: redhat.insights
   - name: community.crypto
