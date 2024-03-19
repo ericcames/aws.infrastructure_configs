@@ -3,6 +3,9 @@
 **Red Hat Ansible Lightspeed with IBM watsonx Code Assistant User Guide**
 - [Ansible code bot install](https://access.redhat.com/documentation/en-us/red_hat_ansible_lightspeed_with_ibm_watsonx_code_assistant/2.x_latest/html/red_hat_ansible_lightspeed_with_ibm_watsonx_code_assistant_user_guide/using-code-bot-for-suggestions_lightspeed-user-guide "Ansible code bot install")
 
+**Ansible code bot GitHub App**
+- [Ansible code bot GitHub App](https://github.com/apps/ansible-code-bot "Ansible code bot GitHub App")
+
 **Ansible Content Lab for Cloud Automation**
 - [Ansible Cloud Automation](https://github.com/ansible-content-lab "Ansible Cloud Automation")
 
