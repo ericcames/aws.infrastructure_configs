@@ -17,4 +17,5 @@
 
 **Managing Enterprise Automation with Red Hat Ansible Automation Platform | DO467**
 - [Managing Enterprise Automation]( https://www.redhat.com/en/services/training/do467-managing-enterprise-automation-red-hat-ansible-automation-platform "Managing Enterprise Automation")
+
 ![alt text](https://github.com/ericcames/aws.infrastructure_configs/blob/main/images/do467-student-guide-toc.png "Logo Title Text 1")
