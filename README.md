@@ -15,6 +15,8 @@
 **Developing Advanced Automation with Red Hat Ansible Automation Platform | DO374**
 - [Developing Advanced Automation]( https://www.redhat.com/en/services/training/do374-developing-advanced-automation-red-hat-ansible-automation-platform "Developing Advanced Automation")
 
+![alt text](https://github.com/ericcames/aws.infrastructure_configs/blob/main/images/do374-student-guide-toc.png "Logo Title Text 1")
+
 **Managing Enterprise Automation with Red Hat Ansible Automation Platform | DO467**
 - [Managing Enterprise Automation]( https://www.redhat.com/en/services/training/do467-managing-enterprise-automation-red-hat-ansible-automation-platform "Managing Enterprise Automation")
 
