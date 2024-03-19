@@ -12,6 +12,8 @@
 **Red Hat Enterprise Linux Automation with Ansible (RH294) | RH294**
 - [RHCE]( https://www.redhat.com/en/services/training/rh294-red-hat-linux-automation-with-ansible?section=overview "RHCE")
 
+![alt text](https://github.com/ericcames/aws.infrastructure_configs/blob/main/images/rh294-student-guide-toc.png "Logo Title Text 1")
+
 **Developing Advanced Automation with Red Hat Ansible Automation Platform | DO374**
 - [Developing Advanced Automation]( https://www.redhat.com/en/services/training/do374-developing-advanced-automation-red-hat-ansible-automation-platform "Developing Advanced Automation")
 
