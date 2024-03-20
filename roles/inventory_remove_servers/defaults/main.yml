@@ -2,5 +2,5 @@
 controller_url: example.com
 controller_user: mickey.mouse
 controller_passwd: password
-server_name: "Linux Demo Server"
-inventory_name: "AWS Inventory - Managed"
+server_name: Linux Demo Server
+inventory_name: AWS Inventory - Managed
