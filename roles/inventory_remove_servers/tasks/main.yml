@@ -21,7 +21,7 @@
 
 - name: Update the AAP AWS Managed Inventory with the controllers
   loop: "{{ instance_info['instances'] }}"
-  ansible.controller.host:
+  awx.awx.host:
     controller_host: https://{{ controller_url }}
     controller_username: "{{ controller_user }}"
     controller_oauthtoken: "{{ new_token.json.token }}"
@@ -32,7 +32,7 @@
 - name: Remove inventory host groups
   loop:
     - rhel
-  ansible.controller.group:
+  awx.awx.group:
     controller_host: https://{{ controller_url }}
     controller_username: "{{ controller_user }}"
     controller_oauthtoken: "{{ new_token.json.token }}"
