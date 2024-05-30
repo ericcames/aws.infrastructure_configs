@@ -12,5 +12,5 @@
     state: absent
 
 - name: Register the insights client
-  redhat.insights.insights_register:
+  redhatinsights.insights.insights_register:
     state: absent
